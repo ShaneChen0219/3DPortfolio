@@ -6,12 +6,13 @@ import { Canvas } from "@react-three/fiber";
 
 import Loader from "../components/Loader";
 import Island from "../models/Island";
-import {  Sky } from "@react-three/drei";
+import { Sky } from "@react-three/drei";
 import Bird from "../models/Bird";
 import Plane from "../models/Plane";
 
 const Home = () => {
-  const [isRotating ,setRotating] = useState(false);
+  const [currentStage, setCurrentStage] = useState(1);
+  const [isRotating ,setIsRotating] = useState(false);
   const adjIslandForScreenSize = ()=>{
     let screenScale = null
     let screenPosition =  [0,-6.5,-43];
@@ -41,9 +42,9 @@ const Home = () => {
   const [planeScale,planePosition] = adjPlaneForScreenSize();
   return (
     <section className="w-full h-screen relative">
-      {/* <div className=' absolute top-28 left-0 right-0 z-0 items-center justify-center'>
-        Hi 
-      </div> */}
+      <div className=" absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
+        Good
+      </div>
       <Canvas
         className={"w-full h-screen bg-transparent ${isRotating ? 'cursor-grabbing':'cursor-grab'}"}
         camera={{ near: 0.1, far: 1000 }}
@@ -55,8 +56,8 @@ const Home = () => {
           {/* <spotLight /> */}
           <hemisphereLight skyColor ='#b1e1ff' groundColor='#000000' intensity={1}/>
           <Bird/>
-          <Sky/>
-          <Island position = {islandPosition} scale = {islandScale} rotation = {islandRotation} isRotating = {isRotating} setRotating ={setRotating} />
+          <Sky isRotating = {isRotating}/>
+          <Island position = {islandPosition} scale = {islandScale} rotation = {islandRotation} isRotating = {isRotating} setIsRotating ={setIsRotating} setCurrentStage={setCurrentStage}/>
           <Plane position = {planePosition} scale = {planeScale} isRotating = {isRotating} rotation ={[0,20,0]}/>
         </Suspense>
       </Canvas>

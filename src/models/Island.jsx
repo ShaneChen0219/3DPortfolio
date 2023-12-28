@@ -14,7 +14,7 @@ import islandScene from "../assets/3d/island.glb";
 import {a} from "@react-spring/three";
 // make it a component
 // export function Model(props) {
-const Island = ({isRotating, setRotating,...props}) => {
+const Island = ({isRotating, setIsRotating,setCurrentStage,...props}) => {
   const islandRef = useRef();
   const{ gl,viewport} = useThree();
   const { nodes, materials } = useGLTF(islandScene);
@@ -26,43 +26,46 @@ const Island = ({isRotating, setRotating,...props}) => {
   const handlePointerDown =  (e)=>{
     e.stopPropagation();
     e.preventDefault();
-    setRotating(true);
+    setIsRotating(true);
 
-    const clientX = e.touched ? e.touches[0].clientX : e.clientX;
+    const clientX = e.touches
+      ? e.touches[0].clientX 
+      : e.clientX;
     lastX.current = clientX;
   }
 
   const handlePointerUp =  (e)=>{
     e.stopPropagation();
     e.preventDefault();
-    setRotating(false);
+    setIsRotating(false);
     
   }
 
   const handlePointerMove =  (e)=>{
     e.stopPropagation();
     e.preventDefault();
-    if(isRotating){
-      const clientX = e.touched ? e.touches[0].clientX : e.clientX;
-      const delta = (clientX - lastX.current )/viewport.width;
-    islandRef.current.rotation.y += delta*0.01 * Math.PI;
-    lastX.current = clientX;
-    rotationSpeed.current = delta*0.01*Math.PI;
-    }
-
   
+    if(isRotating){
+      const clientX = e.touches
+      ? e.touches[0].clientX 
+      : e.clientX;
+      const delta = (clientX - lastX.current)/viewport.width
+      islandRef.current.rotation.y += delta *0.01*Math.PI
+      lastX.current = clientX;
+      rotationSpeed.current = delta*0.01*Math.PI
+    }
   }
 
   const handleKeyDown = (e)=>{
     if(e.key === 'ArrowLeft'){
       if(!isRotating){
-        setRotating(true) 
+        setIsRotating(true) 
         islandRef.current.rotation.y+=0.01*Math.PI
       }
       
     }else if(e.key === 'ArrowRight'){
       if(!isRotating){
-        setRotating(true)
+        setIsRotating(true)
         islandRef.current.rotation.y-=0.01*Math.PI
       }
     }
@@ -70,7 +73,7 @@ const Island = ({isRotating, setRotating,...props}) => {
 
   const handleKeyUp = (e) =>{
     if(e.key ==='ArrowLeft' ||e.key === 'ArrowRight' ){
-      setRotating(false);
+      setIsRotating(false);
     }
   }
 
@@ -80,20 +83,21 @@ const Island = ({isRotating, setRotating,...props}) => {
     canvas.addEventListener('pointerdown',handlePointerDown)
     canvas.addEventListener('pointerup',handlePointerUp)
     canvas.addEventListener('pointermove',handlePointerMove)
-    document.addEventListener('keyup',handleKeyUp);
     document.addEventListener('keydown',handleKeyDown);
+    document.addEventListener('keyup',handleKeyUp);
+
     return()=>{
-      canvas.addEventListener('pointerdown',handlePointerDown)
-      canvas.addEventListener('pointerup',handlePointerUp)
-      canvas.addEventListener('pointermove',handlePointerMove)
-      document.addEventListener('keyup',handleKeyUp);
-      document.addEventListener('keydown',handleKeyDown);
+      canvas.removeEventListener('pointerdown',handlePointerDown)
+      canvas.removeEventListener('pointerup',handlePointerUp)
+      canvas.removeEventListener('pointermove',handlePointerMove)
+      document.removeEventListener('keydown',handleKeyDown);
+      document.removeEventListener('keyup',handleKeyUp);
     }
-  },[gl,handlePointerDown,handlePointerMove,handlePointerUp])
+  },[gl,handlePointerDown,handlePointerUp,handlePointerMove])
   // add on every single frame
   useFrame(()=>{
     if(!isRotating){
-      rotationSpeed.current*= dampingFactor
+      rotationSpeed.current *= dampingFactor;
       if(Math.abs(rotationSpeed.current)<0.001){
         rotationSpeed.current=0;
       }
