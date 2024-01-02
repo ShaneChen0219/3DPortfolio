@@ -12,7 +12,7 @@ function Navbar() {
             <NavLink to='./about' className={({isActive})=> isActive? 'text-blue-500':'text-black-500' }>
                 About
             </NavLink>
-            <NavLink to='./project' className={({isActive})=> isActive? 'text-blue-500':'text-black-500' }>
+            <NavLink to='./projects' className={({isActive})=> isActive? 'text-blue-500':'text-black-500' }>
                 Project
             </NavLink>
         </nav>
