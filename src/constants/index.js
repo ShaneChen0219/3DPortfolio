@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { meta, shopify, starbucks, tesla, dxc} from "../assets/images";
 import {
     car,
     contact,
@@ -66,55 +66,28 @@ export const skills = [
 
 export const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "Service Information Developer",
+        company_name: "DXC Technology",
+        icon: dxc,
         iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
+        date: "Sep 2022 - July 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Enabled real-time tracking and generated stock reports using ABAP, SQL, and Python",
+            "Take charge of on-site ABAP and MM consultancy to maintain and enhance SAP workflows, delivering impactful solutions and recommendations for SAP S/4 Hana projects.",
+            "Designed and developed SAP S/4 Hana projects and SPECs, optimizing performance and functionality.",
+            
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
+        title: "Consultant",
+        company_name: "Ucan System",
         icon: tesla,
         iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
+        date: "Nov 2021 - Aug 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Developed SAP S/4 Hana Reports, Functions, Enhancements, etc. using ABAP",
+            "Created an interface for seamless data exchange between WMS and SAP S/4 Hana",
+            "Provided solutions for issues within SAP S/4 Hana, specializing in the MM/CO module",
         ],
     },
 ];

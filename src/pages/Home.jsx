@@ -51,8 +51,8 @@ const Home = () => {
         camera={{ near: 0.1, far: 1000 }}
       >
         <Suspense fallback={<Loader />}>
-          <directionalLight position={[10,10,10]} intensity={2}/>
-          <ambientLight intensity={0.5} />
+          <directionalLight position={[0.05,0.05,0.05]} intensity={2}/>
+          <ambientLight intensity={1} />
           {/* <pointLight /> */}
           {/* <spotLight /> */}
           <hemisphereLight skyColor ='#b1e1ff' groundColor='#000000' intensity={1}/>
