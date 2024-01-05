@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla, dxc} from "../assets/images";
+import { meta, shopify, starbucks, tesla, dxc,ucan} from "../assets/images";
 import {
     car,
     contact,
@@ -69,7 +69,7 @@ export const experiences = [
         title: "Service Information Developer",
         company_name: "DXC Technology",
         icon: dxc,
-        iconBg: "#accbe1",
+        iconBg: "#FBF9F1",
         date: "Sep 2022 - July 2023",
         points: [
             "Enabled real-time tracking and generated stock reports using ABAP, SQL, and Python",
@@ -81,8 +81,8 @@ export const experiences = [
     {
         title: "Consultant",
         company_name: "Ucan System",
-        icon: tesla,
-        iconBg: "#fbc3bc",
+        icon: ucan,
+        iconBg: "#AAD7D9",
         date: "Nov 2021 - Aug 2022",
         points: [
             "Developed SAP S/4 Hana Reports, Functions, Enhancements, etc. using ABAP",
