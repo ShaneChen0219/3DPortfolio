@@ -180,5 +180,5 @@ const Island = ({isRotating, setIsRotating,setCurrentStage,...props}) => {
   );
 };
 
-useGLTF.preload("/island.glb");
+useGLTF.preload("..src/assets/3d/island.glb");
 export default Island;

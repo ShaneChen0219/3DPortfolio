@@ -23,15 +23,14 @@ import {
     summiz,
     tailwindcss,
     threads,
-    typescript
+    typescript,
+    python,
+    java,
+    cplusplus,
+    postgresql,
 } from "../assets/icons";
 
 export const skills = [
-    {
-        imageUrl: css,
-        name: "CSS",
-        type: "Frontend",
-    },
     {
         imageUrl: git,
         name: "Git",
@@ -41,6 +40,11 @@ export const skills = [
         imageUrl: github,
         name: "GitHub",
         type: "Version Control",
+    },
+    {
+        imageUrl: css,
+        name: "CSS",
+        type: "Frontend",
     },
     {
         imageUrl: html,
@@ -62,6 +66,31 @@ export const skills = [
         name: "Tailwind CSS",
         type: "Frontend",
     },
+    {
+        imageUrl: python,
+        name: "Pyhton",
+        type: "Backend",
+    },
+    {
+        imageUrl: java,
+        name: "Java",
+        type: "Backend",
+    },
+    {
+        imageUrl: cplusplus,
+        name: "C++",
+        type: "Backend",
+    },
+    {
+        imageUrl: mongodb,
+        name: "MongoDB",
+        type: "Data Base",
+    },
+    {
+        imageUrl: postgresql,
+        name: "PostgreSQL",
+        type: "Data Base",
+    }
 ];
 
 export const experiences = [
@@ -111,46 +140,32 @@ export const socialLinks = [
 ];
 
 export const projects = [
-    // {
-    //     iconUrl: pricewise,
-    //     theme: 'btn-back-red',
-    //     name: 'Amazon Price Tracker',
-    //     description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-    //     link: 'https://github.com/adrianhajdin/pricewise',
-    // },
-    // {
-    //     iconUrl: threads,
-    //     theme: 'btn-back-green',
-    //     name: 'Full Stack Threads Clone',
-    //     description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-    //     link: 'https://github.com/adrianhajdin/threads',
-    // },
-    // {
-    //     iconUrl: car,
-    //     theme: 'btn-back-blue',
-    //     name: 'Car Finding App',
-    //     description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-    //     link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
-    // },
-    // {
-    //     iconUrl: snapgram,
-    //     theme: 'btn-back-pink',
-    //     name: 'Full Stack Instagram Clone',
-    //     description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-    //     link: 'https://github.com/adrianhajdin/social_media_app',
-    // },
-    // {
-    //     iconUrl: estate,
-    //     theme: 'btn-back-black',
-    //     name: 'Real-Estate Application',
-    //     description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-    //     link: 'https://github.com/adrianhajdin/projects_realestate',
-    // },
-    // {
-    //     iconUrl: summiz,
-    //     theme: 'btn-back-yellow',
-    //     name: 'AI Summarizer Application',
-    //     description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-    //     link: 'https://github.com/adrianhajdin/project_ai_summarizer',
-    // }
+    {
+        iconUrl: pricewise,
+        theme: 'btn-back-red',
+        name: 'Squeezing Koopa & Goomba Game',
+        description: 'A 2D game using C++ with the SFML framework, including dynamic items generation and responsiveness in-game collisions. ',
+        link: 'https://github.com/ShaneChen0219/Mario-Jump-Game',
+    },
+    {
+        iconUrl: threads,
+        theme: 'btn-back-green',
+        name: 'Temperature Record API',
+        description: "A RESTful API that allows tempeture records application to CRUD the DB. It's base on Python and Flask, integrated with PostgreSQL using ElephantSQL. ",
+        link: 'https://github.com/ShaneChen0219/RESTapiForTemperature',
+    },
+    {
+        iconUrl: car,
+        theme: 'btn-back-blue',
+        name: '3D Animated Portfolio',
+        description: 'A responsive 3D portfolio base on React.js, allowing users to send email to specific email address.',
+        link: 'https://github.com/ShaneChen0219/3DPortfolio',
+    },
+    {
+        iconUrl: snapgram,
+        theme: 'btn-back-pink',
+        name: 'Full Stack Food Ordering App',
+        description: 'Built an online ordering app, which covers user authentication, checkout payment processing, and order acceptance facilitated through automated email notifications.',
+        link: '',
+    },
 ];
