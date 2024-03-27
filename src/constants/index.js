@@ -90,7 +90,18 @@ export const skills = [
         imageUrl: postgresql,
         name: "PostgreSQL",
         type: "Data Base",
+    },
+    {
+        imageUrl: nextjs,
+        name: "Nextjs",
+        type: "Frontend",
+    },
+    {
+        imageUrl: nodejs,
+        name: "Nodejs",
+        type: "Backend",
     }
+
 ];
 
 export const experiences = [
@@ -167,5 +178,12 @@ export const projects = [
         name: 'Full Stack Food Ordering App',
         description: 'Built an online ordering app, which covers user authentication, checkout payment processing, and order acceptance facilitated through automated email notifications.',
         link: '',
+    },
+    {
+        iconUrl: summiz,
+        theme: 'btn-back-red',
+        name: 'Simplified TLS Protocol',
+        description: 'Build a simplified TLS (Transport Layer Security) protocol involves the establishment of a secure communication channel between a server and a client. ',
+        link: 'https://github.com/ShaneChen0219/TLS-communitation.git',
     },
 ];
