@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla, dxc,ucan} from "../assets/images";
+import { meta, shopify, starbucks, tesla, dxc,ucan,atlasRTX} from "../assets/images";
 import {
     car,
     contact,
@@ -106,6 +106,19 @@ export const skills = [
 
 export const experiences = [
     {
+        title: "Product Engineering Intern",
+        company_name: "AtlasRTX",
+        icon: atlasRTX,
+        iconBg: "#FFD1DC",
+        date: "May 2024 - Aug 2024",
+        points: [
+            "Implemented comprehensive health check endpoints for all Azure Functions, enhancing system reliability and enabling proactive performance monitoring",
+            "Built and configured robust CI pipelines for deployment using YAML, significantly improving development efficiency and consistency",
+            "Deployed Azure Functions using PowerShell and Bicep files, ensuring efficient, repeatable, and scalable infrastructure management processes",
+            
+        ],
+    },
+    {
         title: "Service Information Developer",
         company_name: "DXC Technology",
         icon: dxc,
@@ -119,7 +132,7 @@ export const experiences = [
         ],
     },
     {
-        title: "Consultant",
+        title: "SAP ABAP Developer",
         company_name: "Ucan System",
         icon: ucan,
         iconBg: "#AAD7D9",

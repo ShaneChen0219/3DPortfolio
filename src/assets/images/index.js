@@ -6,6 +6,7 @@ import tesla from './tesla.png'
 import logo from './logo.svg'
 import dxc from './dxc.png'
 import ucan from './UCANlogo.png'
+import atlasRTX from './AtlasRTX.png'
 
 export {
     hero,
@@ -15,5 +16,6 @@ export {
     tesla,
     logo,
     dxc,
-    ucan
+    ucan,
+    atlasRTX,
 }
