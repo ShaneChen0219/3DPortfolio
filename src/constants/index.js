@@ -57,6 +57,11 @@ export const skills = [
         type: "Frontend",
     },
     {
+        imageUrl: typescript,
+        name: "TypeScript",
+        type: "Frontend",
+    },
+    {
         imageUrl: react,
         name: "React",
         type: "Frontend",
@@ -101,7 +106,6 @@ export const skills = [
         name: "Nodejs",
         type: "Backend",
     }
-
 ];
 
 export const experiences = [
