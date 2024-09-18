@@ -116,9 +116,9 @@ export const experiences = [
         iconBg: "#FFD1DC",
         date: "May 2024 - Aug 2024",
         points: [
-            "Implemented comprehensive health check endpoints for all Azure Functions, enhancing system reliability and enabling proactive performance monitoring",
-            "Built and configured robust CI pipelines for deployment using YAML, significantly improving development efficiency and consistency",
-            "Deployed Azure Functions using PowerShell and Bicep files, ensuring efficient, repeatable, and scalable infrastructure management processes",
+            "Designed and integrated health check endpoints for Azure Functions using C#, performing minute-by-minute checks with five attempts before sending alerts, reducing alert noise by 30%",
+            "Developed Azure AI Search using text-embedding-ada-002 and GPT-3.5 Turbo from OpenAI, leveraging RAG for vectorized and semantic search, improving accuracy from 13.8% to 96.5%",
+            "Engineered CI pipelines with YAML, PowerShell, and Bicep scripts to automate the integration of 6 Azure Functions, achieving an 85% speed improvement",
             
         ],
     },
@@ -129,9 +129,9 @@ export const experiences = [
         iconBg: "#FBF9F1",
         date: "Sep 2022 - July 2023",
         points: [
-            "Enabled real-time tracking and generated stock reports using ABAP, SQL, and Python",
-            "Take charge of on-site ABAP and MM consultancy to maintain and enhance SAP workflows, delivering impactful solutions and recommendations for SAP S/4 Hana projects.",
-            "Designed and developed SAP S/4 Hana projects and SPECs, optimizing performance and functionality.",
+            "Provided on-site consultancy for SAP MM(Materials Management), CO(Controlling), and ABAP modules, optimizing workflows and improving data accuracy by 25%",
+            "Created an automated inventory system using ABAP, SQL, and Python. Reduced inventory checking time from 3 days to 3 hours",
+            "Led SAP S/4 HANA projects for WMS and ERP integration, automated purchase orders, and enabled real-time AWS data exchange for freight tracking. Boosted manufacturing efficiency by 35% and reduced inventory costs by 20%",
             
         ],
     },
@@ -142,9 +142,9 @@ export const experiences = [
         iconBg: "#AAD7D9",
         date: "Nov 2021 - Aug 2022",
         points: [
-            "Developed SAP S/4 Hana Reports, Functions, Enhancements, etc. using ABAP",
-            "Created an interface for seamless data exchange between WMS and SAP S/4 Hana",
-            "Provided solutions for issues within SAP S/4 Hana, specializing in the MM/CO module",
+            "Engineered 23 custom ALV reports, 14 OOALV reports, and 3 SmartForms in SAP S/4 HANA, improving report generation efficiency by 40% and enhancing data visibility for end-users",
+            "Spearheaded the ERP and CRM data exchange project. Delivered 11 RFCs(Remote Function Call), attaining a 90% reduction in data processing time",
+            "Reduced manual testing time by 60% and improved test coverage and reliability across various SAP modules",
         ],
     },
 ];
@@ -168,6 +168,13 @@ export const socialLinks = [
 ];
 
 export const projects = [
+    { 
+        iconUrl:sass,
+        theme: 'btn-back-pink',
+        name:'School Faq',
+        description:"Created a web application with Next.js and Flask-based Python server to provide an interactive interface for users to engage with the University chatbot",
+        link:'',
+    },
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',

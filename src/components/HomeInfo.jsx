@@ -30,13 +30,13 @@ const renderContent={
         />
     ),
     3:(
-        <InfoBox text='Finished mulitple side projects, including backend, frontend and full stack developments' 
+        <InfoBox text='Accomplished multiple projects, including backend, frontend and full stack developments' 
         link='/projects'
-        btnText='Visit my porfolio'
+        btnText='Visit my portfolio'
         />
     ),    
     4:(
-        <InfoBox text='Looking for internship in Summer and Fall 2024. Full time jobs after 12/2024' 
+        <InfoBox text='Looking for full time jobs after 12/2024' 
         link='/contact'
         btnText='Contact me'
         />
