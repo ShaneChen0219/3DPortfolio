@@ -173,7 +173,7 @@ export const projects = [
         theme: 'btn-back-pink',
         name:'School Faq',
         description:"Created a web application with Next.js and Flask-based Python server to provide an interactive interface for users to engage with the University chatbot",
-        link:'',
+        link:'https://github.com/ShaneChen0219/SchoolFAQ',
     },
     {
         iconUrl: pricewise,

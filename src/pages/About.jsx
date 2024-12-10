@@ -11,7 +11,7 @@ const About = () => {
       </h1>
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
         <p>
-          Software Engineer based in Salt Lake City, specializing in backend development.
+          Software Engineer based in Los Angeles, CA.
         </p>
       </div>
       <div className='py-10 flex flex-col'>
@@ -37,7 +37,7 @@ const About = () => {
         </h3>
           <div className='mt-5 flex flex-col gap-3 text-slate-500'>
             <p>
-              Software Engineer based in Salt Lake City, specializing in backend development.
+              Software Engineer based in Los Angeles, CA.
             </p>
           </div>
           <div className='mt-12 flex'>

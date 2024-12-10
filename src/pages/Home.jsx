@@ -53,10 +53,10 @@ const Home = () => {
         <Suspense fallback={<Loader />}>
           <directionalLight position={[0.05,0.05,0.05]} intensity={2}/>
           <ambientLight intensity={1} />
-          {/* <pointLight /> */}
-          {/* <spotLight /> */}
+          <pointLight />
+          <spotLight />
           <hemisphereLight skyColor ='#b1e1ff' groundColor='#000000' intensity={1}/>
-          <Bird/>
+          {/* <Bird/> */}
           <Sky isRotating = {isRotating}/>
           <Island position = {islandPosition} scale = {islandScale} rotation = {islandRotation} isRotating = {isRotating} setIsRotating ={setIsRotating} setCurrentStage={setCurrentStage}/>
           <Plane position = {planePosition} scale = {planeScale} isRotating = {isRotating} rotation ={[0,20,0]}/>

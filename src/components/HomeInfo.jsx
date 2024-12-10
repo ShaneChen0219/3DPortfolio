@@ -20,23 +20,25 @@ const renderContent={
         <h1 className='sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5'>
             Hi, I am <span className='font-semibold'>Shane</span>👋
             <br/>
-            Studying in Master of Software Development, University of Utah
+            I'm looking for full time SDE/SWE position. 
+            <br/>
+            Please don't hesitate to reach out!
         </h1>
     ),
     2:(
-        <InfoBox text='Study in Master of Software Development program, University of Utah' 
+        <InfoBox text='Graduated from University of Utah, Master of Software Development.' 
         link='/about'
         btnText='Learn more'
         />
     ),
     3:(
-        <InfoBox text='Accomplished multiple projects, including backend, frontend and full stack developments' 
+        <InfoBox text='2 years experienced SAP ABAP consultant/developer and interned in AtlasRTX, an AI Chatbot company in Park City, UT. ' 
         link='/projects'
         btnText='Visit my portfolio'
         />
     ),    
     4:(
-        <InfoBox text='Looking for full time jobs after 12/2024' 
+        <InfoBox text=' Accomplished multiple projects, including backend, frontend and full stack developments.' 
         link='/contact'
         btnText='Contact me'
         />
