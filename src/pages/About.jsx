@@ -11,7 +11,7 @@ const About = () => {
       </h1>
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
         <p>
-          Software Engineer based in Los Angeles, CA.
+          Software Engineer based in Bayonne, NJ.
         </p>
       </div>
       <div className='py-10 flex flex-col'>

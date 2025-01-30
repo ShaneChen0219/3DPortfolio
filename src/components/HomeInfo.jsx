@@ -32,13 +32,13 @@ const renderContent={
         />
     ),
     3:(
-        <InfoBox text='2 years experienced SAP ABAP consultant/developer and interned in AtlasRTX, an AI Chatbot company in Park City, UT. ' 
+        <InfoBox text='2 years experienced Software Engineer' 
         link='/projects'
         btnText='Visit my portfolio'
         />
     ),    
     4:(
-        <InfoBox text=' Accomplished multiple projects, including backend, frontend and full stack developments.' 
+        <InfoBox text=' Accomplished multiple projects, including AI, backend, frontend and full stack developments.' 
         link='/contact'
         btnText='Contact me'
         />
